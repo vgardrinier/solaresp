@@ -12,7 +12,7 @@ def worksheet
 end
 
 post "/" do
-  new_row = [params["name"], params["email"], params["phone_number"]]
+  new_row = [params["name"], params["email"], params["phone_number"], params["address"]]
   begin
     worksheet.insert_rows(worksheet.num_rows + 1, [new_row])
     worksheet.save

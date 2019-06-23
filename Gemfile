@@ -6,5 +6,5 @@ gem "google_drive"
 gem "rake"
 gem 'puma'
 
- ruby '2.5.3'
+ ruby '2.4.3'
 

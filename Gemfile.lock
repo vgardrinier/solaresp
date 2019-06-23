@@ -49,6 +49,7 @@ GEM
     rack (1.6.5)
     rack-protection (1.5.3)
       rack
+    rake (12.3.2)
     representable (3.0.3)
       declarative (< 0.1.0)
       declarative-option (< 0.2.0)
@@ -67,10 +68,12 @@ GEM
     uber (0.1.0)
 
 PLATFORMS
-  ruby '2.5.3'
+  ruby
+  unknown
 
 DEPENDENCIES
   google_drive
+  rake
   sinatra
 
 BUNDLED WITH

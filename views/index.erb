@@ -1,49 +1,84 @@
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Fancy new app!</h1>
-        <p>This is going to be really useful for you!</p>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.tesla.com/tesla_theme/assets/img/solar/panels/section-hero.jpg?20180104);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Produce your own clean Energy!</h1>
+          <p>Reduce your electricty costs while increasing your house's value!</p>
+        </div>
+      </div>
+      <div class="row form-solar">
+        <div class="col-md-4 col-sm-4">
+          <% if defined? error_message %>
+            <p class="bg-danger"><%= error_message %></p>
+          <% end %>
+          <form action="/" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" name="name" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" name="email" id="email">
+            </div>
+            <div class="form-group">
+              <label for="phone_number">Number of people in the house</label>
+              <input type="tel" class="form-control" name="phone_number" id="phone_number">
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="address" class="form-control" name="address" id="address">
+            </div>
+            <button type="submit" class="btn btn-flat">Sign up</button>
+          </form>
+        </div>
       </div>
     </div>
-    <div class="row iphone">
-      <div class="col-md-4 col-sm-4">
-        <% if defined? error_message %>
-          <p class="bg-danger"><%= error_message %></p>
-        <% end %>
-        <form action="/" method="POST">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" name="name" id="name">
+  </div>
+
+
+ <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5 title-testimonials">What people are saying...</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/arthur-littm" />
+            <h5>Wouter D.</h5>
+            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
           </div>
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" name="email" id="email">
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/cveneziani" />
+            <h5>Fred S.</h5>
+            <p class="font-weight-light mb-0">"SolarESP is the new standard. I reckon every home owners will use their solar panels in 10 years!"</p>
           </div>
-          <div class="form-group">
-            <label for="phone_number">Phone number</label>
-            <input type="tel" class="form-control" name="phone_number" id="phone_number">
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/sarahlafer" />
+            <h5>Sarah W.</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making solar energy so easy!"</p>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>The time is now</h2>
+      <p>The Spanish just changed. It is now totally free to use solar panels. You can even make money selling your Energy Surplus. SolarESP is not an alternative, but an Investment</p>
+    </div>
+    <div class="col-md-4">
+      <h2>It's ridiculously easy!</h2>
+      <p>You've never seen an app like this before because it's totally new. In just a few clicks, be part of the future. We take care of everything from the manufacturing until the installation.</p>
+   </div>
+    <div class="col-md-4">
+      <h2>It works</h2>
+      <p>Almost all EU countries already do it! Time for spain to catch up!</p>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
-      <h2>It's fancy!</h2>
-      <p>You've never seen an app this fancy. Making the app fancy was never on the backlog, it was always in progress. We have a dedicated team of testers ensuring it meets our self imposed fanciness standards.</p>
-    </div>
-    <div class="col-md-4">
-      <h2>It's new!</h2>
-      <p>You've never seen an app like this before because it's totally new. We've barely seen it, it's that new. And for one glorious moment it will be the newest thing in the world available to you.</p>
-   </div>
-    <div class="col-md-4">
-      <h2>It's an app</h2>
-      <p>Don't start fretting that we're going to release a fancy new banana or fancy new species of dog. We've definitely been working on an app. It's fancy, it's new, it's an app. What more could you want?</p>
-    </div>
-  </div>
-</div>

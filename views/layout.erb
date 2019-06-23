@@ -5,11 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Fancy new app!</title>
+    <title>SolarESP</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/3.2.1/assets/font-awesome/css/font-awesome.css">
+    <style type="text/css">
+      body {
+        font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 700;
+      }
+
+      .banner {
+        background-size: cover;
+        background-position: center;
+        padding: 150px 0;
+      }
+
+      .banner h1 {
+        margin: 0;
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      .banner p {
+        font-size: 20px;
+        color: white;
+        opacity: .7;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+      }
+
+      .btn-flat {
+        background: #1BCB7F;
+        color: white;
+      }
+
+      .btn-flat:hover {
+        text-decoration: none;
+        color: white;
+        opacity: 0.85;
+      }
+
+      .form-solar {
+        color: white;
+        display: flex;
+      }
+
+      .avatar-large {
+        width: 56px;
+        border-radius: 50%;
+      }
+
+    .testimonials {
+      padding-bottom: 100px;
+      padding-top: 100px;
+    }
+
+    .title-testimonials {
+      padding-bottom: 30px;
+    }
+
+    </style>
+
   </head>
   <body>
     <%= yield %>
@@ -17,7 +86,7 @@
     <div class="container">
       <hr>
       <footer>
-        <p>&copy; 2017 The Fancy New App Company, Inc.</p>
+        <p>&copy; 2019 SolarESP, Inc.</p>
       </footer>
     </div>
   </body>

@@ -67,7 +67,7 @@ GEM
     uber (0.1.0)
 
 PLATFORMS
-  ruby
+  ruby '2.5.3'
 
 DEPENDENCIES
   google_drive

@@ -6,7 +6,7 @@ get "/" do
 end
 
 def worksheet
-  @session ||= GoogleDrive::Session.from_service_account_key("client_secret.json")
+  @session ||= GoogleDrive::Session.from_service_account_key("./client_secret.json")
   @spreadsheet ||= @session.spreadsheet_by_title("Solar_db")
   @worksheet ||= @spreadsheet.worksheets.first
 end

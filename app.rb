@@ -20,8 +20,8 @@ post "/" do
   rescue StandardError => error
     puts error.inspect
     erb :index, locals: {
-      error_message: "Your details could not be saved, please try again.",
-      user_details: user_details
-    }
+            error_message: "Your details could not be saved, please try again.",
+            user_details: user_details
+          }
   end
 end

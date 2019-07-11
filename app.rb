@@ -13,7 +13,7 @@ end
 
 
 post "/" do
-  new_row = [params["first_name"], params["last_name"], params["email"], params["number"]]
+  new_row = [params["first_name"], params["last_name"], params["email"]
   begin
     worksheet.insert_rows(worksheet.num_rows + 1, [new_row])
     worksheet.save

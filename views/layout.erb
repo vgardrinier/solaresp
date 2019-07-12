@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <!-- <link rel="stylesheet" href="https://fortawesome.github.io/Font-Awesome/3.2.1/assets/font-awesome/css/font-awesome.css"> -->
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css” />
     <script src="https://kit.fontawesome.com/28dbb5d2f6.js"></script>
     <style type="text/css">
 
@@ -28,6 +29,10 @@
       h6 {
         font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: 700;
+      }
+
+      i {
+        color: #FBC250;
       }
 
       /*EDIT CONTAINER CSS CODE*/
@@ -103,6 +108,8 @@
       padding-bottom: 100px;
       padding-top: 100px;
       background-color: white;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     .title-testimonials {
@@ -300,7 +307,7 @@
         width: 600px;
         max-width: 90%;
           --bg: #fdfdfd;
-        --highlight1: #ED4264;
+        --highlight1: #FBC250;
         --highlight2: #FFEDBC;
         --color: #1a1e24;
         --font-number: Montserrat, Roboto, Helvetica, Arial, sans-serif;
@@ -326,7 +333,7 @@
         content: counter(list);
         width: 5rem;
         height: 5rem;
-        float: left;
+   /*     float: left;*/
         margin: 0 1.5rem 0.75rem 0;
         color: var(--bg);
         background: var(--highlight1) linear-gradient(to bottom right, var(--highlight1) 25%, var(--highlight2));
@@ -370,29 +377,90 @@
           display: inline;
           color: white;
           font-weight: normal;
-          font-family: Avenir;
+          font-family: 'Avenir', 'Roboto', 'Helvetica';
         }
         #hidden2 {
           display: inline;
           color: white;
           font-weight: normal;
-          font-family: Avenir;
+          font-family: 'Avenir', 'Roboto', 'Helvetica';
         }
        }
 
       /*Font awesome icons style*/
 
+      .list-why-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
       .fas {
         font-size: 50px;
         font-weight: normal;
+        text-align: center;
+        padding-bottom: 10px;
       }
 
-      #video-solar iframe {
-        display: flex;
-        justify-content: space-around;
-        height: 200px;
-        width: 300px;
-        background-size: cover;
+      .ytp-cued-thumbnail-overlay-image {
+        background: url("https://cdn.pixabay.com/photo/2017/03/13/07/34/photovoltaic-2138992__480.jpg");
+      }
+
+      .tv-container {
+      text-align: center;
+      margin-bottom: 100px;
+      }
+
+      .tv-container iframe {
+        display: inline-block;
+      }
+
+      /*FOOTER SECTION*/
+
+      #footer {
+          background-color: #fbc250;
+          padding: 70px 0;
+          color: #fff;
+          font-family: Avenir, Roboto, Helvetica;
+      }
+
+      #footer i {
+        color: black;
+      }
+
+      .footer-content {
+          width: 390px;
+          margin: 0 auto;
+      }
+
+      .footer-content > div {
+          margin-bottom: 40px;
+      }
+
+      .footer-content > div > p:first-child {
+          margin-bottom: 15px;
+          text-transform: uppercase;
+      }
+
+      .contact-details h3 {
+          border-bottom: 1px solid #008ecc;
+          font-weight: 700;
+          margin-bottom: 15px;
+          padding-bottom: 15px;
+          text-transform: uppercase;
+      }
+
+      .contact-details p {
+          line-height: 30px;
+      }
+
+      .contact-details p i {
+          margin-right: 10px;
+      }
+
+      .contact-details span {
+          display: block;
+          margin-left: 24px;
       }
 
     </style>
@@ -403,12 +471,27 @@
   <div class="container">
     <%= yield %>
 
-    <div class="container">
-      <hr>
-      <footer>
-        <p>&copy; 2019 SolarESP, Inc.</p>
-      </footer>
-    </div>
+    <!-- <div class="container">
+      <hr> -->
+          <footer id="footer">
+            <div class="container">
+              <div class="row text-center">
+                <div class="footer-content">
+                  <div>
+                    <address class="contact-details">
+                      <h3 style="color: white">Contact Us</h3>
+                      <p><i class="fa fa-pencil"></i>Barcelona<span>08002</span> <span>Barcelona Activa Incubators </span><span>Spain</span></p><br>
+                      <p><i class="fa fa-phone"></i>Phone: +34 (658) 10 01 69 </p>
+                      <p><i class="fa fa-envelope"></i>solarmenteteam@gmail.com</p>
+                    </address>
+                  </div>
+
+                  <p>Copyright &copy; 2019 Design and Developed with  <a href="http://www.themefisher.com"><i class="fa fa-heart"></i></a> </p>
+                </div>
+              </div>
+            </div>
+          </footer>
+  <!--   </div> -->
     <script>
       // Initialize and add the map
       function initMap() {

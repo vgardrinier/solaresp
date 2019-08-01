@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SolarESP</title>
+    <title>Ilumina tu futuro.</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -104,13 +104,37 @@
         border-radius: 50%;
       }
 
-    .testimonials {
+    .avatar {
+      width: 40px;
+      border-radius: 50%;
+    }
+
+/*    .avatar-large {
+      width: 56px;
+      border-radius: 50%;
+    }
+*/
+    .avatar-bordered {
+      width: 40px;
+      border-radius: 50%;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+      border: white 1px solid;
+    }
+
+    .avatar-square {
+      width: 40px;
+      border-radius: 0px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+      border: white 1px solid;
+    }
+
+/*    .testimonials {
       padding-bottom: 100px;
       padding-top: 100px;
       background-color: white;
       padding-left: 10px;
       padding-right: 10px;
-    }
+    }*/
 
     .title-testimonials {
       padding-bottom: 30px;
@@ -180,9 +204,9 @@
 
     .card-product {
       overflow: hidden;
-      height: 250px;
-      background: white;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+/*      height: 250px;*/
+/*      background: white;*/
+/*      box-shadow: 0 0 15px rgba(0,0,0,0.2);*/
       display: flex;
       align-items: center;
       margin-top: 30px;
@@ -320,10 +344,10 @@
         clear: both;
         counter-increment: list;
         padding-bottom: 4rem;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 1.375;
         position: relative;
-        font-family: Avenir;
+        font-family: Hiragino Kaku Gothic Pro;
         color: black;
         font-weight: normal;
     }
@@ -366,7 +390,7 @@
       display: none;
     }
 
-    @media screen and (max-width: 824px) {
+    @media screen and (max-width: 900px) {
         .card-category-text {
          display: none;
          }
@@ -377,13 +401,13 @@
           display: inline;
           color: white;
           font-weight: normal;
-          font-family: 'Avenir', 'Roboto', 'Helvetica';
+          font-family: 'Hiragino Kaku Gothic Pro', 'Roboto', 'Helvetica';
         }
         #hidden2 {
           display: inline;
           color: white;
           font-weight: normal;
-          font-family: 'Avenir', 'Roboto', 'Helvetica';
+          font-family: 'Hiragino Kaku Gothic Pro', 'Roboto', 'Helvetica';
         }
        }
 
@@ -409,6 +433,7 @@
       .tv-container {
       text-align: center;
       margin-bottom: 100px;
+      margin-top: 100px;
       }
 
       .tv-container iframe {
@@ -421,7 +446,7 @@
           background-color: #fbc250;
           padding: 70px 0;
           color: #fff;
-          font-family: Avenir, Roboto, Helvetica;
+          font-family: Hiragino Kaku Gothic Pro, Roboto, Helvetica;
       }
 
       #footer i {
@@ -462,6 +487,95 @@
           display: block;
           margin-left: 24px;
       }
+
+/*      WHY US SECTION
+*/
+    .kards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 16px;
+      margin-left: 2vw;
+      margin-right: 2vw;
+    }
+
+    .kard-kategory {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    // Smallest device
+    @media (min-width: 100px) and (max-width: 575px) {
+      .kards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+      .kards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+      .kards {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+      .kards {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+      .kards {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  #navigation {
+      -webkit-transition: all 0.8s ease 0s;
+         -moz-transition: all 0.8s ease 0s;
+          -ms-transition: all 0.8s ease 0s;
+           -o-transition: all 0.8s ease 0s;
+              transition: all 0.8s ease 0s;
+
+      background-color: rgba(0,0,0,.4);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+      padding: 5px 0;
+  }
+
+  #navigation.animated-header {
+      padding: 20px 0;
+  }
+
+  h1.navbar-brand {
+      font-size: 20px;
+      font-family: "Avenir"
+      font-weight: 700;
+      margin: 0;
+    /*  text-transform: uppercase;*/
+  }
+
+  .navbar-inverse .navbar-nav > li > a {
+      color: #fff;
+      font-size: 15px;
+      /*text-transform: uppercase;*/
+  }
 
     </style>
 

@@ -35,6 +35,10 @@
         color: #FBC250;
       }
 
+      i:hover {
+        color: #1BCB7F;
+      }
+
       /*EDIT CONTAINER CSS CODE*/
       .container {
         margin-left: 0px;
@@ -86,12 +90,20 @@
       .btn-flat {
         background: #1BCB7F;
         color: white;
+        opacity: 0.9;
+        transition: -webkit-transform .3s ease-out;
+        transition: transform .3s ease-out;
+        transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        transition: transform .3s ease-out;
+
       }
 
       .btn-flat:hover {
         text-decoration: none;
         color: white;
-        opacity: 0.85;
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.1);
+        transform: scale3d(1.03, 1.03, 1.1);
       }
 
       .form-solar {
@@ -114,6 +126,15 @@
       border-radius: 50%;
     }
 */
+
+
+
+    .nav-item:hover {
+      text-decoration: none;
+      color: #1BCB7F;
+      opacity: 0.85;
+    }
+
     .avatar-bordered {
       width: 40px;
       border-radius: 50%;
@@ -511,6 +532,17 @@
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    opacity: 0.8;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    }
+
+    .kard-kategory:hover {
+      opacity: 1;
+      -webkit-transform: scale3d(1.03, 1.03, 1.1);
+      transform: scale3d(1.03, 1.03, 1.1);
     }
 
     // Smallest device
